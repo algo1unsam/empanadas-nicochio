@@ -1,5 +1,6 @@
 import empleados.*
 
+// esperaba mas tests de un fan de TDD!!!! :P
 test "sueldo de Baigorria y de Gimenez" {
 	baigorria.venderEmpanada()
 	baigorria.venderEmpanada()

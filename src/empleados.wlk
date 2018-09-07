@@ -6,6 +6,7 @@ object baigorria {
 	var dinero = 0
 	var deuda = 0
 	var difernecia
+	// PIRULO??
 	var pirulo
 
 	method VendeEmpanadas() {
@@ -16,12 +17,14 @@ object baigorria {
 	method calcularSueldo() {
 		sueldo = empanadasVendidas * valorDeLaEmpanada
 	}
-
+	
+	// por qué se llama adicional???	
 	method cobrarSueldo(adicional) {
 		sueldo = adicional
 		dinero = sueldo
 	}
 
+	// y esto??
 	method dineroEnSueldo() {
 	}
 
@@ -29,6 +32,11 @@ object baigorria {
 		if (dinero >= cuanto) {
 			dinero = dinero - cuanto
 		} else {
+			// difernecia (a parte de que está mal escrito :P) sólo lo usas acá
+			// suena a que debería ser una variable local (y no un atributo del objeto)
+			// por otro lado, me parece que tampoco la necesitas acá
+			// deuda = deuda + cuanto
+			// dinero = 0
 		
 			difernecia = cuanto - dinero
 			dinero = self.totalDinero() - dinero
@@ -38,6 +46,8 @@ object baigorria {
 	// deuda = +cuanto
 	}
 
+	// revisalo, pero sospecho que sueldo también está medio de mas... 
+	// con saber cuanta guita tenes, y tener el método que calculo cuanto cobra es suficiente
 	method pagar() {
 		if (sueldo >= deuda) {
 			dinero = sueldo - deuda
